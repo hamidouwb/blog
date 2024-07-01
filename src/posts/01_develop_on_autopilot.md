@@ -8,20 +8,6 @@ summary: 'Explore ways to make programming more fun and efficient! I share my fa
 
 # Enhancing Developer Productivity
 # Table of Contents
-1. [Touch Typing](#touch-typing)
-2. [Window Management](#window-management)
-3. [Command Line Interface](#command-line-interface)
-    * [iterm2](#iterm2)
-    * [Starship](#starship)
-    * [Basic Commands](#basic-commands)
-    * [Bash Scripting](#bash-scripting)
-4. [Git & GitHub](#git--github)
-5. [Vim & Vim Tutor](#vim--vim-tutor)
-6. [NVChad](#nvchad)
-7. [Neovim](#neovim)
-8. [Browser](#browser)
-9. [Bonus: Building a Portfolio Site](#bonus-building-a-portfolio-site)
-    * [Adding Models Using Threlte, Three.js, Autodesk Maya, Blender, Mixamo](#adding-models-using-threlte-threejs-autodesk-maya-blender-mixamo)
 
 ## Introduction
 Welcome! Let's dive into some cool tools that will take your developer experience to the next
