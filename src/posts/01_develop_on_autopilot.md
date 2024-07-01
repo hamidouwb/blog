@@ -1,8 +1,8 @@
 ---
 title: 'Developer productivity Coding on autopilot'
-imgUrl: '/post-images/terminal-setup.jpg'
-youtubeId: 'CF1tMjvHDRA'
-publishedAt: '2022-10-03'
+imgUrl: '/post-images/01_develop_on_autopilot/thumbnail.jpg'
+youtubeId: ''
+publishedAt: '2024-06-30'
 summary: 'Explore ways to make programming more fun and efficient! I share my favorite tools and tips to help you learn faster and ship your projects with ease.'
 ---
 
@@ -22,10 +22,6 @@ summary: 'Explore ways to make programming more fun and efficient! I share my fa
 8. [Browser](#browser)
 9. [Bonus: Building a Portfolio Site](#bonus-building-a-portfolio-site)
     * [Adding Models Using Threlte, Three.js, Autodesk Maya, Blender, Mixamo](#adding-models-using-threlte-threejs-autodesk-maya-blender-mixamo)
-    * [Learning Svelte](#learning-svelte)
-
-[My Great Heading](#my-great-heading)
-
 
 ## Introduction
 Welcome! Let's dive into some cool tools that will take your developer experience to the next
@@ -174,7 +170,7 @@ rm ~/.config/nvim/.git from your root directory
 
 ## Neovim
 To configure my own configuration. The resources were the most helpful.
-- [Typecraft](https://youtube.com/playlist?list=PLsz00TDipIfd500OiPVRyZIc9TLHRRgIM&si=-0kk2tyhMImXrC2B) playlist on how to configure neovim 
+- [typecraft](https://youtube.com/playlist?list=PLsz00TDipIfd500OiPVRyZIc9TLHRRgIM&si=-0kk2tyhMImXrC2B) playlist on how to configure neovim 
 - [Josean Martinez](https://youtu.be/6pAG3BHurdM?si=uuX2_-5RSLobhOa3) neovim setup.
 
 ## Browser
@@ -183,13 +179,7 @@ I use Arc. I has keymaps keymaps I use the most.
 - `cmd` + `r` to reload a site.
 - `cmd` + `option`+ `j` to open the developer tool. 
 
-## Bonus: Building a Portfolio Site
+## Bonus: Programming a blog you are reading this from.
 Checkout my youtube video one how I use my set up to make the blog containg to post.
 ### Adding Models Using Threlte, Three.js, Autodesk Maya, Blender, Mixamo
-### Deploy
-### Learning Svelte
-
 ## Devs see you on the next burst.
-
-### My Great Heading
-

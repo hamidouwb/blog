@@ -46,7 +46,6 @@
       {#if post.metadata.youtubeId}
         <a href={youtubeHref}>Watch Video</a>
       {/if}
-      <a {href}>Type:</a>
     </div>
   </div>
 </article>

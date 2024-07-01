@@ -31,11 +31,15 @@
 
 <style>
   .full-screen {
-    height: 80vh;
+    height: 35vh;
+    width: 35vh;
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* Justifies content to the left */
     align-items: center;
+    border-radius: 300px;
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 0%, 1);
+    margin-top: 10px
   }
 </style>
 

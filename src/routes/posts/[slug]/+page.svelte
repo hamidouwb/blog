@@ -3,7 +3,6 @@
   import type { PageData } from "./$types";
   import CopyCodeInjector from "$lib/components/CopyCodeInjector.svelte";
   import PostHeader from "$lib/components/PostHeader.svelte";
-  import "prismjs/plugins/line-numbers/prism-line-numbers.js";
   import { page } from "$app/stores";
   import Giscus from "@giscus/svelte";
 
@@ -37,10 +36,9 @@
 <div class="px-4 py-4">
   <Giscus
     id="comments"
-    repo="josean-dev/sveltekit-blog"
-    repoId="R_kgDOKBNW8w"
+    repo="Waraba2/blog"
+    repoId="R_kgDOMQMafQ"
     category="General"
-    categoryId="DIC_kwDOKBNW884CZ5C-"
     mapping="specific"
     term={$page.url.pathname}
     reactionsEnabled="1"
