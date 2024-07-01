@@ -1,0 +1,37 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "/posts/01_develop_on_autopilot",
+			"dest": "/posts/01_develop_on_autopilot/"
+		},
+		{
+			"src": "/posts/01_develop_on_autopilot/",
+			"status": 308,
+			"headers": {
+				"Location": "/posts/01_develop_on_autopilot"
+			}
+		},
+		{
+			"src": "/_app/immutable/.+",
+			"headers": {
+				"cache-control": "public, immutable, max-age=31536000"
+			}
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "/.*",
+			"dest": "/fn"
+		}
+	],
+	"overrides": {
+		"index.html": {
+			"path": ""
+		},
+		"posts/01_develop_on_autopilot.html": {
+			"path": "posts/01_develop_on_autopilot"
+		}
+	}
+}

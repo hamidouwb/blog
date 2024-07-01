@@ -3,6 +3,7 @@
   import type { PageData } from "./$types";
   import CopyCodeInjector from "$lib/components/CopyCodeInjector.svelte";
   import PostHeader from "$lib/components/PostHeader.svelte";
+  import "prismjs/plugins/line-numbers/prism-line-numbers.js";
   import { page } from "$app/stores";
   import Giscus from "@giscus/svelte";
 
