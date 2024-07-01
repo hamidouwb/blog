@@ -6,9 +6,6 @@ publishedAt: '2024-06-30'
 summary: 'Explore ways to make programming more fun and efficient! I share my favorite tools and tips to help you learn faster and ship your projects with ease.'
 ---
 
-# Enhancing Developer Productivity
-# Table of Contents
-
 ## Introduction
 Welcome! Let's dive into some cool tools that will take your developer experience to the next
 level. It all starts with...
@@ -43,7 +40,7 @@ Install [brew](https://brew.sh/):
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-The install bash:
+To install bash:
 ```bash
 brew install bash
 ```
@@ -68,7 +65,6 @@ brew install starship
 ```
 It comes with a default configuration, but you can customize it as you like by reading the docs.
 
-
 ### Basic Commands
 Here are some basic commands to navigate and modify your file systems: 
 
@@ -87,7 +83,6 @@ To learn more about these commands, use their man page. For example, for the `ls
 ```bash
 man ls
 ```
-
 
 ### Bash Scripting
 Bash scripting is useful for repetitive tasks. For example, create a script to automate starting a 
@@ -109,7 +104,7 @@ This will navigate to your Learning directory, create a folder named "productivi
 into that directory.
 
 ## Git & GitHub
-Feature branch workflow is a great way to collaborate with Git:
+[Feature branch workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow) is a great way to collaborate with Git:
 ```bash
 git clone [repository] # Clones the specified repository to your local machine
 git checkout [branch-name] # Clones the specified repository to your local machine
@@ -131,7 +126,7 @@ You don't have to memorize everything right away; practice makes perfect. This i
 truly leverage your touch typing skills, allowing for a smoother and more productive workflow. You 
 can start learning directly from your command line interface by running:
 ```bash
-vitutor
+vimtutor
 ```
 
 ## NVChad
@@ -155,11 +150,10 @@ rm ~/.config/nvim/.git from your root directory
 ```
 
 ## Neovim
-To configure my own configuration. The resources were the most helpful.
+To configure your own configuration. These resources were the most helpful.
 - [typecraft](https://youtube.com/playlist?list=PLsz00TDipIfd500OiPVRyZIc9TLHRRgIM&si=-0kk2tyhMImXrC2B) playlist on how to configure neovim 
 - [Josean Martinez](https://youtu.be/6pAG3BHurdM?si=uuX2_-5RSLobhOa3) neovim setup.
 
-## Browser
 ## Browser
 I use Arc. I has keymaps keymaps I use the most.
 - `cmd` + `r` to reload a site.
