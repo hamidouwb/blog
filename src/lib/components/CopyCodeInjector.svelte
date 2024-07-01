@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import CopyCodeButton from "$lib/components/CopyCodebutton.svelte";
+  import CopyCodeButton from "$lib/components/CopyCodeButton.svelte";
   // Inject the copy icon into code blocks.
   onMount(() => {
     const preTags: HTMLCollectionOf<HTMLPreElement> =
