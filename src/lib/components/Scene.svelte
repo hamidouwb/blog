@@ -101,14 +101,6 @@
 
 </script>
 
-<style>
-  .scene-container {
-    height: 100vh; /* Adjust the height as needed */
-    width: 100%;
-    overflow: hidden; /* Optional: ensures no scrollbars appear */
-  }
-</style>
-
 <T.PerspectiveCamera makeDefault position={[-5, 6, 10]} fov={25}>
   <OrbitControls enableDamping target={[0, 0, 0]} />
 </T.PerspectiveCamera>
