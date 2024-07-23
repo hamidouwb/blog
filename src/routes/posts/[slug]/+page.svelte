@@ -35,18 +35,4 @@
 </article>
 
 <div class="px-4 py-4">
-  <Giscus
-    id="comments"
-    repo="Waraba2/blog"
-    repoId="R_kgDOMQMafQ"
-    category="General"
-    mapping="specific"
-    term={$page.url.pathname}
-    reactionsEnabled="1"
-    emitMetadata="0"
-    inputPosition="bottom"
-    theme="dark_tritanopia"
-    lang="en"
-    loading="lazy"
-  />
 </div>
