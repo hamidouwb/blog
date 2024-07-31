@@ -10,7 +10,9 @@
       <strong>go ahead and explore it!</strong>
     </p>
     <p class="text-xl font-light text-justify leading-relaxed">
-      For more content, visit my <a href="https://youtube.com/@devburst?si=WZpc8ul0jR9YgHsE" 
+      Learning computer science concepts can be intimidating for beginners, and my goal is to share 
+      what I am learning and the tools I use to become a productive developer. For more content, 
+      visit my <a href="https://youtube.com/@devburst?si=WZpc8ul0jR9YgHsE" 
         class="font-bold text-blue-600 hover:text-blue-800">YouTube channel</a>.
     </p>
   </div>

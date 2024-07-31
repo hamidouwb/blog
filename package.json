@@ -14,7 +14,7 @@
 	"devDependencies": {
 		"@shikijs/rehype": "^1.9.0",
 		"@sveltejs/adapter-auto": "^3.2.2",
-		"@sveltejs/adapter-vercel": "^5.4.0",
+		"@sveltejs/adapter-vercel": "^5.4.1",
 		"@sveltejs/kit": "^2.5.17",
 		"@sveltejs/vite-plugin-svelte": "^3.1.1",
 		"@tailwindcss/aspect-ratio": "^0.4.2",
