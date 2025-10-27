@@ -1,17 +1,18 @@
 /**
- * Gruvbox dark theme
+ * Gruvbox Light & Dark theme
  *
- * Adapted from a theme based on:
- * Vim Gruvbox dark Theme (https://github.com/morhetz/gruvbox)
+ * Adapted from:
+ * Vim Gruvbox Theme (https://github.com/morhetz/gruvbox)
  *
- * @author Azat S. <to@azat.io>
- * @version 1.0
+ * @version 2.0
  */
 
+/* Light mode (default) */
 code[class*='language-'],
-pre[class*='language-'] {
-	color: #ebdbb2; /* fg1 / fg */
-	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+pre[class*='language-'],
+pre > code {
+	color: #3c3836; /* gruvbox-light fg1 */
+	font-family: 'JetBrains Mono', Consolas, Monaco, 'Andale Mono', monospace;
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
@@ -32,29 +33,36 @@ pre[class*='language-'] {
 pre[class*='language-']::-moz-selection,
 pre[class*='language-'] ::-moz-selection,
 code[class*='language-']::-moz-selection,
-code[class*='language-'] ::-moz-selection {
-	color: #fbf1c7; /* fg0 */
-	background: #7c6f64; /* bg4 */
+code[class*='language-'] ::-moz-selection,
+pre > code::-moz-selection,
+pre > code ::-moz-selection {
+	color: #282828; /* gruvbox-light fg0 */
+	background: #a89984; /* gruvbox-light bg4 */
 }
 
 pre[class*='language-']::selection,
 pre[class*='language-'] ::selection,
 code[class*='language-']::selection,
-code[class*='language-'] ::selection {
-	color: #fbf1c7; /* fg0 */
-	background: #7c6f64; /* bg4 */
+code[class*='language-'] ::selection,
+pre > code::selection,
+pre > code ::selection {
+	color: #282828; /* gruvbox-light fg0 */
+	background: #a89984; /* gruvbox-light bg4 */
 }
 
 /* Code blocks */
-pre[class*='language-'] {
+pre[class*='language-'],
+pre {
 	padding: 1em;
 	margin: 0.5em 0;
 	overflow: auto;
+	border-radius: 0.5em;
 }
 
 :not(pre) > code[class*='language-'],
-pre[class*='language-'] {
-	background: #1d2021; /* theme('colors.gray.800')  , bg0_h */
+pre[class*='language-'],
+pre {
+	background: #ebdbb2; /* gruvbox-light bg1 */
 }
 
 /* Inline code */
@@ -63,10 +71,44 @@ pre[class*='language-'] {
 	border-radius: 0.3em;
 }
 
+/* Dark mode */
+.dark code[class*='language-'],
+.dark pre[class*='language-'],
+.dark pre > code {
+	color: #ebdbb2; /* gruvbox-dark fg1 */
+}
+
+.dark pre[class*='language-']::-moz-selection,
+.dark pre[class*='language-'] ::-moz-selection,
+.dark code[class*='language-']::-moz-selection,
+.dark code[class*='language-'] ::-moz-selection,
+.dark pre > code::-moz-selection,
+.dark pre > code ::-moz-selection {
+	color: #fbf1c7; /* gruvbox-dark fg0 */
+	background: #7c6f64; /* gruvbox-dark bg4 */
+}
+
+.dark pre[class*='language-']::selection,
+.dark pre[class*='language-'] ::selection,
+.dark code[class*='language-']::selection,
+.dark code[class*='language-'] ::selection,
+.dark pre > code::selection,
+.dark pre > code ::selection {
+	color: #fbf1c7; /* gruvbox-dark fg0 */
+	background: #7c6f64; /* gruvbox-dark bg4 */
+}
+
+.dark :not(pre) > code[class*='language-'],
+.dark pre[class*='language-'],
+.dark pre {
+	background: #1d2021; /* gruvbox-dark bg0_h */
+}
+
+/* Light mode tokens */
 .token.comment,
 .token.prolog,
 .token.cdata {
-	color: #a89984; /* fg4 / gray1 */
+	color: #928374; /* gruvbox-light gray */
 }
 
 .token.delimiter,
@@ -75,55 +117,55 @@ pre[class*='language-'] {
 .token.selector,
 .token.important,
 .token.atrule {
-	color: #fb4934; /* red2 */
+	color: #cc241d; /* gruvbox-light red */
 }
 
 .token.operator,
 .token.punctuation,
 .token.attr-name {
-	color: #a89984; /* fg4 / gray1 */
+	color: #7c6f64; /* gruvbox-light fg4 */
 }
 
 .token.tag,
 .token.tag .punctuation,
 .token.doctype,
 .token.builtin {
-	color: #fabd2f; /* yellow2 */
+	color: #d79921; /* gruvbox-light yellow */
 }
 
 .token.entity,
 .token.number,
 .token.symbol {
-	color: #d3869b; /* purple2 */
+	color: #b16286; /* gruvbox-light purple */
 }
 
 .token.property,
 .token.constant,
 .token.variable {
-	color: #fb4934; /* red2 */
+	color: #458588; /* gruvbox-light blue */
 }
 
 .token.string,
 .token.char {
-	color: #b8bb26; /* green2 */
+	color: #98971a; /* gruvbox-light green */
 }
 
 .token.attr-value,
 .token.attr-value .punctuation {
-	color: #a89984; /* fg4 / gray1 */
+	color: #7c6f64; /* gruvbox-light fg4 */
 }
 
 .token.url {
-	color: #b8bb26; /* green2 */
+	color: #689d6a; /* gruvbox-light aqua */
 	text-decoration: underline;
 }
 
 .token.function {
-	color: #fabd2f; /* yellow2 */
+	color: #d79921; /* gruvbox-light yellow */
 }
 
 .token.regex {
-	background: #b8bb26; /* green2 */
+	background: #98971a; /* gruvbox-light green */
 }
 
 .token.bold {
@@ -135,9 +177,81 @@ pre[class*='language-'] {
 }
 
 .token.inserted {
-	background: #a89984; /* fg4 / gray1 */
+	background: #b8bb26; /* gruvbox-light green light */
 }
 
 .token.deleted {
-	background: #fb4934; /* red2 */
+	background: #fb4934; /* gruvbox-light red light */
+}
+
+/* Dark mode tokens */
+.dark .token.comment,
+.dark .token.prolog,
+.dark .token.cdata {
+	color: #928374; /* gruvbox-dark gray */
+}
+
+.dark .token.delimiter,
+.dark .token.boolean,
+.dark .token.keyword,
+.dark .token.selector,
+.dark .token.important,
+.dark .token.atrule {
+	color: #fb4934; /* gruvbox-dark red */
+}
+
+.dark .token.operator,
+.dark .token.punctuation,
+.dark .token.attr-name {
+	color: #a89984; /* gruvbox-dark fg4 */
+}
+
+.dark .token.tag,
+.dark .token.tag .punctuation,
+.dark .token.doctype,
+.dark .token.builtin {
+	color: #fabd2f; /* gruvbox-dark yellow */
+}
+
+.dark .token.entity,
+.dark .token.number,
+.dark .token.symbol {
+	color: #d3869b; /* gruvbox-dark purple */
+}
+
+.dark .token.property,
+.dark .token.constant,
+.dark .token.variable {
+	color: #83a598; /* gruvbox-dark blue */
+}
+
+.dark .token.string,
+.dark .token.char {
+	color: #b8bb26; /* gruvbox-dark green */
+}
+
+.dark .token.attr-value,
+.dark .token.attr-value .punctuation {
+	color: #a89984; /* gruvbox-dark fg4 */
+}
+
+.dark .token.url {
+	color: #8ec07c; /* gruvbox-dark aqua */
+	text-decoration: underline;
+}
+
+.dark .token.function {
+	color: #fabd2f; /* gruvbox-dark yellow */
+}
+
+.dark .token.regex {
+	background: #b8bb26; /* gruvbox-dark green */
+}
+
+.dark .token.inserted {
+	background: #98971a; /* gruvbox-dark green dark */
+}
+
+.dark .token.deleted {
+	background: #cc241d; /* gruvbox-dark red dark */
 }

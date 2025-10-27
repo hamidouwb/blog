@@ -23,24 +23,25 @@
 
   <div class="flex-1 py-2 sm:py-0">
     <a {href}>
-      <h3 class="mb-1 text-xl font-medium">
+      <h3 class="mb-1 text-xl font-medium text-gruvbox-light-fg0 dark:text-gruvbox-dark-fg0">
         {post.metadata.title}
       </h3>
-      <p class="text-gray-60 font-light dark:text-gray-300">
+      <p class="font-light text-gruvbox-light-fg2 dark:text-gruvbox-dark-fg2">
         <span>Published: </span>
         <time datetime={post.metadata.publishedAt}>
           {formatPublishedAt(post.metadata.publishedAt)}
         </time>
       </p>
 
-      <p class="py-2 font-light">
+      <p class="py-2 font-light text-gruvbox-light-fg1 dark:text-gruvbox-dark-fg1">
         {post.metadata.summary}
       </p>
     </a>
 
     <div
-      class="flex space-x-4 font-light text-gray-600 underline
-          dark:text-gray-300"
+      class="flex space-x-4 font-light underline
+      text-gruvbox-light-blue dark:text-gruvbox-dark-blue
+      hover:text-gruvbox-light-aqua dark:hover:text-gruvbox-dark-aqua"
     >
       <a {href}>Read More</a>
       {#if post.metadata.youtubeId}

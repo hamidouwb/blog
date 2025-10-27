@@ -3,8 +3,11 @@
   export let target: "_self" | "_blank" = "_self";
 </script>
 
-<a 
-  class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"
+<a
+  class="p-2 rounded-lg
+  text-gruvbox-light-fg1 hover:bg-gruvbox-light-bg2
+  dark:text-gruvbox-dark-fg1 dark:hover:bg-gruvbox-dark-bg2
+  transition-colors"
   {href}
   {target}
 >

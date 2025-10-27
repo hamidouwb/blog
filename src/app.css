@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply bg-gruvbox-light-bg0 text-gruvbox-light-fg0;
+  }
+
+  body.dark {
+    @apply bg-gruvbox-dark-bg0 text-gruvbox-dark-fg0;
+  }
+}
+
 code {
   counter-reset: step;
   counter-increment: step 0;
@@ -18,9 +28,17 @@ code .line::before {
   margin-right: 1.5rem;
   display: inline-block;
   text-align: right;
-  color: #627e97;
+  @apply text-gruvbox-light-fg4;
+}
+
+.dark code .line::before {
+  @apply text-gruvbox-dark-fg4;
 }
 
 .line-highlight {
-  background-color: #143652;
+  @apply bg-gruvbox-light-bg2;
+}
+
+.dark .line-highlight {
+  @apply bg-gruvbox-dark-bg2;
 }

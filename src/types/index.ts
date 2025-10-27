@@ -16,3 +16,13 @@ export type MarkdownPostMetadataAndSlug = {
 	slug: string;
 	metadata: MarkdownPost['metadata'];
 };
+
+// Portfolio projects
+export type Project = {
+	title: string;
+	description: string;
+	tags: string[];
+	demoGif?: string;
+	githubUrl?: string;
+	liveUrl?: string;
+};

@@ -53,12 +53,12 @@
 <section class="pb-6">
   <header
     class="mx-4 mb-4 inline-block
-    border-b py-2 dark:border-gray-700"
+    border-b py-2 border-gruvbox-light-yellow dark:border-gruvbox-dark-yellow"
   >
-    <h2 class="text-3xl font-semibold">Blog Posts</h2>
+    <h2 class="text-3xl font-semibold text-gruvbox-light-fg0 dark:text-gruvbox-dark-fg0">Blog Posts</h2>
   </header>
 
-  <section class="divide-y dark:divide-gray-700">
+  <section class="divide-y divide-gruvbox-light-bg3 dark:divide-gruvbox-dark-bg3">
     {#each data.posts as post}
       <PostListing {post} />
     {/each}

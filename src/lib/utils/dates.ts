@@ -1,4 +1,4 @@
-export function formatPublishedAt(date: String) {
+export function formatPublishedAt(date: string) {
 	return new Date(date).toLocaleDateString('en-US', {
 		year: 'numeric',
 		month: 'long',

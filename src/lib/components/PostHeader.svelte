@@ -25,15 +25,16 @@
     </div>
   </div>
   <div>
-    <h1 class="text-4xl font-bold mb-4">
+    <h1 class="text-4xl font-bold mb-4 text-gruvbox-light-fg0 dark:text-gruvbox-dark-fg0">
       {metadata.title}
     </h1>
 
-    <div 
-      class="py-2 border-t dark:border-gray-700 inline-block"
+    <div
+      class="py-2 border-t border-gruvbox-light-bg3 dark:border-gruvbox-dark-bg3 inline-block
+      text-gruvbox-light-fg2 dark:text-gruvbox-dark-fg2"
     >
       <span>Published: </span>
-      <time 
+      <time
         class="font-light"
         datetime={metadata.publishedAt}
       >
