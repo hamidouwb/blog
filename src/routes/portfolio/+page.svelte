@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-  <title>Portfolio | dev_burst</title>
+  <title>hamidouwb</title>
   <meta
     name="description"
     content="Explore my portfolio of web development projects, featuring full-stack applications, tools, and experiments."
