@@ -1,62 +1,15 @@
-import { c as create_ssr_component, a as compute_rest_props, b as spread, e as escape_attribute_value, d as escape_object, f as add_attribute, g as subscribe, v as validate_component } from "../../chunks/ssr.js";
+import { c as create_ssr_component, a as add_attribute, b as compute_rest_props, d as spread, e as escape_attribute_value, f as escape_object, g as subscribe, v as validate_component } from "../../chunks/ssr.js";
+import { G as GithubIcon } from "../../chunks/GithubIcon.js";
 import { w as writable } from "../../chunks/index2.js";
 const Logo = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<dotlottie-player src="https://lottie.host/686c0216-9676-4bbf-ac0b-be626dbf24fa/uVy640JbOo.json" background="transparent" speed="1" style="width: 150px; height: 150px;" class="fill-current text-black dark:text-white" loop autoplay data-svelte-h="svelte-1nslerv"></dotlottie-player>`;
-});
-const YoutubeIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, ["width", "height", "className"]);
-  let { width = "24" } = $$props;
-  let { height = "24" } = $$props;
-  let { className = "" } = $$props;
-  if ($$props.width === void 0 && $$bindings.width && width !== void 0) $$bindings.width(width);
-  if ($$props.height === void 0 && $$bindings.height && height !== void 0) $$bindings.height(height);
-  if ($$props.className === void 0 && $$bindings.className && className !== void 0) $$bindings.className(className);
-  return `<svg${spread(
-    [
-      { viewBox: "0 -3 20 20" },
-      { version: "1.1" },
-      { xmlns: "http://www.w3.org/2000/svg" },
-      {
-        "xmlns:xlink": "http://www.w3.org/1999/xlink"
-      },
-      { width: escape_attribute_value(width) },
-      { height: escape_attribute_value(height) },
-      { class: escape_attribute_value(className) },
-      escape_object($$restProps)
-    ],
-    {}
-  )}><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>youtube [#168]</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)" fill="currentColor"><g id="icons" transform="translate(56.000000, 160.000000)"><path d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289" id="youtube-[#168]"></path></g></g></g></g></svg>`;
-});
-const GithubIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $$restProps = compute_rest_props($$props, ["width", "height", "className"]);
-  let { width = "24" } = $$props;
-  let { height = "24" } = $$props;
-  let { className = "" } = $$props;
-  if ($$props.width === void 0 && $$bindings.width && width !== void 0) $$bindings.width(width);
-  if ($$props.height === void 0 && $$bindings.height && height !== void 0) $$bindings.height(height);
-  if ($$props.className === void 0 && $$bindings.className && className !== void 0) $$bindings.className(className);
-  return `<svg${spread(
-    [
-      { viewBox: "0 0 20 20" },
-      { version: "1.1" },
-      { xmlns: "http://www.w3.org/2000/svg" },
-      {
-        "xmlns:xlink": "http://www.w3.org/1999/xlink"
-      },
-      { width: escape_attribute_value(width) },
-      { height: escape_attribute_value(height) },
-      { class: escape_attribute_value(className) },
-      escape_object($$restProps)
-    ],
-    {}
-  )}><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>github [#142]</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="currentColor"><g id="icons" transform="translate(56.000000, 160.000000)"><path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"></path></g></g></g></g></svg>`;
 });
 const IconLink = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { href } = $$props;
   let { target = "_self" } = $$props;
   if ($$props.href === void 0 && $$bindings.href && href !== void 0) $$bindings.href(href);
   if ($$props.target === void 0 && $$bindings.target && target !== void 0) $$bindings.target(target);
-  return `<a class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-800"${add_attribute("href", href, 0)}${add_attribute("target", target, 0)}>${slots.default ? slots.default({}) : ``}</a>`;
+  return `<a class="p-2 rounded-lg text-gruvbox-light-fg1 hover:bg-gruvbox-light-bg2 dark:text-gruvbox-dark-fg1 dark:hover:bg-gruvbox-dark-bg2 transition-colors"${add_attribute("href", href, 0)}${add_attribute("target", target, 0)}>${slots.default ? slots.default({}) : ``}</a>`;
 });
 const darkmode = writable(false);
 const SunIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -121,23 +74,47 @@ const DarkmodeButton = create_ssr_component(($$result, $$props, $$bindings, slot
   $$unsubscribe_darkmode();
   return `<button class="p-2 text-purple-8000 dark:text-yellow-200">${$darkmode ? `<div>${validate_component(SunIcon, "SunIcon").$$render($$result, { class: "w-8 h-8 fill-current" }, {}, {})}</div>` : `<div>${validate_component(MoonIcon, "MoonIcon").$$render($$result, { class: "w-8 h-8 fill-current" }, {}, {})}</div>`}</button>`;
 });
+const PortfolioIcon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let $$restProps = compute_rest_props($$props, ["width", "height", "className"]);
+  let { width = "24" } = $$props;
+  let { height = "24" } = $$props;
+  let { className = "" } = $$props;
+  if ($$props.width === void 0 && $$bindings.width && width !== void 0) $$bindings.width(width);
+  if ($$props.height === void 0 && $$bindings.height && height !== void 0) $$bindings.height(height);
+  if ($$props.className === void 0 && $$bindings.className && className !== void 0) $$bindings.className(className);
+  return `<svg${spread(
+    [
+      { height: escape_attribute_value(height) },
+      { width: escape_attribute_value(width) },
+      { version: "1.1" },
+      { id: "Capa_1" },
+      { xmlns: "http://www.w3.org/2000/svg" },
+      {
+        "xmlns:xlink": "http://www.w3.org/1999/xlink"
+      },
+      { viewBox: "0 0 502.672 502.672" },
+      { "xml:space": "preserve" },
+      { class: escape_attribute_value(className) },
+      escape_object($$restProps)
+    ],
+    {}
+  )}><g><g><g><path fill="currentColor" d="M138.29,168.019h258.806v-16.178c0-13.352-10.936-24.267-24.267-24.267H266.011v-14.129
+				c0-20.104-16.351-36.39-36.39-36.39h-62.124c-9.707,0-18.831,3.796-25.734,10.699c-6.903,6.903-10.678,15.962-10.678,25.691
+				v14.15H24.267C10.915,127.574,0,138.488,0,151.841v216.722l81.581-165.275C91.482,183.161,115.9,168.019,138.29,168.019z
+				 M155.353,113.445c0-3.214,1.316-6.256,3.581-8.542c2.265-2.33,5.328-3.602,8.542-3.602h62.124
+				c6.709,0,12.123,5.436,12.123,12.144v14.15h-86.369V113.445z"></path><path fill="currentColor" d="M486.874,192.243H138.29c-13.331,0-29.099,9.793-34.945,21.743L9.599,403.895
+				c-5.91,11.929,0.194,21.722,13.525,21.722h348.584c13.331,0,29.121-9.772,34.988-21.722l93.725-189.909
+				C506.309,202.036,500.248,192.243,486.874,192.243z"></path></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></g></svg>`;
+});
 const MainHeader = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<header class="fixed z-10 top-0 inset-x-0 border-b bg-white dark:bg-dark-background dark:border-gray-800"><nav class="flex items-center justify-start max-w-5xl mx-auto px-4 h-24"><a href="/" class="mr-auto">${validate_component(Logo, "Logo").$$render($$result, { class: "w-10 h-10" }, {}, {})}</a> <div class="flex space-x-1 items-center">${validate_component(DarkmodeButton, "DarkmodeButton").$$render($$result, {}, {}, {})} ${validate_component(IconLink, "IconLink").$$render(
-    $$result,
-    {
-      href: "https://www.youtube.com/channel/UCMIHeP1K0dfx3JTPpwrWqfw",
-      target: "_blank"
-    },
-    {},
-    {
-      default: () => {
-        return `${validate_component(YoutubeIcon, "YoutubeIcon").$$render($$result, { class: "w-8 h-8 fill-current" }, {}, {})}`;
-      }
+  return `<header class="fixed z-10 top-0 inset-x-0 border-b bg-gruvbox-light-bg0 dark:bg-gruvbox-dark-bg0 border-gruvbox-light-bg3 dark:border-gruvbox-dark-bg3"><nav class="flex items-center justify-start max-w-5xl mx-auto px-4 h-24"><a href="/" class="mr-auto">${validate_component(Logo, "Logo").$$render($$result, { class: "w-10 h-10" }, {}, {})}</a> <div class="flex space-x-1 items-center">${validate_component(DarkmodeButton, "DarkmodeButton").$$render($$result, {}, {}, {})} ${validate_component(IconLink, "IconLink").$$render($$result, { href: "/portfolio" }, {}, {
+    default: () => {
+      return `${validate_component(PortfolioIcon, "PortfolioIcon").$$render($$result, { class: "w-8 h-8 fill-current" }, {}, {})}`;
     }
-  )} ${validate_component(IconLink, "IconLink").$$render(
+  })} ${validate_component(IconLink, "IconLink").$$render(
     $$result,
     {
-      href: "https://github.com/Waraba2",
+      href: "https://github.com/hamidouwb",
       target: "_blank"
     },
     {},
