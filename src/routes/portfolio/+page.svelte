@@ -12,7 +12,7 @@
     name="description"
     content="Explore my portfolio of web development projects, featuring full-stack applications, tools, and experiments."
   />
-  <meta property="og:title" content="Portfolio | dev_burst" />
+  <meta property="og:title" content="Portfolio | hamidouwb" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={$page.url.href} />
   <meta

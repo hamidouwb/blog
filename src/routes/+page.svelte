@@ -13,18 +13,18 @@
 
 <svelte:head>
 
-  <title>dev_burst</title>
+  <title>hamidouwb</title>
   <meta
     name="description"
-    content="Full-stack dev passionate about web dev, neovim, dev workflows, mechanical keyboards 
+    content="Full-stack dev passionate about web dev, neovim, dev workflows, mechanical keyboards
     and sharing what I know."
   />
-  <meta property="og:title" content="bev_burst" />
+  <meta property="og:title" content="hamidouwb" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={$page.url.href} />
   <meta
     property="og:description"
-    content="Full-stack dev passionate about web dev, neovim, dev workflows, mechanical keyboards 
+    content="Full-stack dev passionate about web dev, neovim, dev workflows, mechanical keyboards
     and sharing what I know."
   />
 </svelte:head>
