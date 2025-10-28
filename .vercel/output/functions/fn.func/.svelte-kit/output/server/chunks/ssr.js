@@ -235,12 +235,12 @@ function style_object_to_string(style_object) {
   return Object.keys(style_object).filter((key) => style_object[key] != null && style_object[key] !== "").map((key) => `${key}: ${escape_attribute_value(style_object[key])};`).join(" ");
 }
 export {
-  compute_rest_props as a,
-  spread as b,
+  add_attribute as a,
+  compute_rest_props as b,
   create_ssr_component as c,
-  escape_object as d,
+  spread as d,
   escape_attribute_value as e,
-  add_attribute as f,
+  escape_object as f,
   subscribe as g,
   escape as h,
   set_current_component as i,

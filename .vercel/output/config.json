@@ -2,6 +2,17 @@
 	"version": 3,
 	"routes": [
 		{
+			"src": "/portfolio",
+			"dest": "/portfolio/"
+		},
+		{
+			"src": "/portfolio/",
+			"status": 308,
+			"headers": {
+				"Location": "/portfolio"
+			}
+		},
+		{
 			"src": "/posts/01_develop_on_autopilot",
 			"dest": "/posts/01_develop_on_autopilot/"
 		},
@@ -29,6 +40,9 @@
 	"overrides": {
 		"index.html": {
 			"path": ""
+		},
+		"portfolio.html": {
+			"path": "portfolio"
 		},
 		"posts/01_develop_on_autopilot.html": {
 			"path": "posts/01_develop_on_autopilot"
