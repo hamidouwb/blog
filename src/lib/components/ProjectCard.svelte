@@ -14,12 +14,24 @@
   hover:border-gruvbox-light-blue dark:hover:border-gruvbox-dark-blue"
 >
   {#if project.demoGif}
-    <div class="aspect-video overflow-hidden bg-gruvbox-light-bg2 dark:bg-gruvbox-dark-bg2">
+    <div class="w-full" style="padding-bottom: 56.25%; position: relative; overflow: hidden;">
       <img
         src={project.demoGif}
         alt="{project.title} demo"
-        class="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;"
+        class="transition-transform duration-300 group-hover:scale-105"
       />
+    </div>
+  {:else if project.youtubeId}
+    <div class="w-full" style="padding-bottom: 56.25%; position: relative; overflow: hidden;">
+      <iframe
+        src="https://www.youtube.com/embed/{project.youtubeId}"
+        title="{project.title} video"
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
   {/if}
 

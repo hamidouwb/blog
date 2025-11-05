@@ -10,4 +10,11 @@ export const projects: Project[] = [
 		githubUrl: 'https://github.com/hamidouwb/scarfy/',
     liveUrl: 'https://hamidouwb.github.io/scarfy/'
 	},
+  {
+    title: 'Mansa Musa',
+    description: "A 3D game based on Mansa Musa known as one of the richest man in history",
+    tags: ['C++', '3D Modeling', 'Unreal Engine','Game Development'],
+    youtubeId: 'QZH_iWCVCT0',
+    liveUrl: 'https://youtu.be/QZH_iWCVCT0'
+  }
 ];

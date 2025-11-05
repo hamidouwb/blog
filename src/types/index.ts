@@ -23,6 +23,7 @@ export type Project = {
 	description: string;
 	tags: string[];
 	demoGif?: string;
+	youtubeId?: string;
 	githubUrl?: string;
 	liveUrl?: string;
 };
