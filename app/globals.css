@@ -1,26 +1,207 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  body {
+    @apply bg-gruvbox-light-bg0 text-gruvbox-light-fg0;
+  }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .dark body {
+    @apply bg-gruvbox-dark-bg0 text-gruvbox-dark-fg0;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Code block styling */
+pre {
+  @apply bg-gruvbox-light-bg1 text-gruvbox-light-fg1 rounded-lg p-4 overflow-x-auto;
+}
+
+.dark pre {
+  @apply bg-gruvbox-dark-bg1 text-gruvbox-dark-fg1;
+}
+
+code {
+  counter-reset: step;
+  counter-increment: step 0;
+}
+
+code .line {
+  display: inline-block;
+}
+
+code .line::before {
+  content: counter(step);
+  counter-increment: step;
+  width: 1rem;
+  margin-right: 1.5rem;
+  display: inline-block;
+  text-align: right;
+  @apply text-gruvbox-light-fg4;
+}
+
+.dark code .line::before {
+  @apply text-gruvbox-dark-fg4;
+}
+
+.line-highlight {
+  @apply bg-gruvbox-light-bg2;
+}
+
+.dark .line-highlight {
+  @apply bg-gruvbox-dark-bg2;
+}
+
+/* 3D Canvas container */
+.full-screen {
+  height: 35vh;
+  width: 35vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 300px;
+  box-shadow:
+    inset 0 0 0 1px hsla(0, 0%, 0%, 0.2),
+    0 10px 25px -5px rgba(0, 0, 0, 0.3),
+    0 8px 10px -6px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+/* Gruvbox Syntax Highlighting - Light Theme */
+.hljs {
+  @apply text-gruvbox-light-fg1;
+}
+
+.hljs-comment,
+.hljs-quote {
+  @apply text-gruvbox-light-gray italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-tag {
+  @apply text-gruvbox-light-red;
+}
+
+.hljs-string,
+.hljs-attr,
+.hljs-attribute {
+  @apply text-gruvbox-light-green;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable {
+  @apply text-gruvbox-light-purple;
+}
+
+.hljs-function,
+.hljs-title,
+.hljs-class .hljs-title {
+  @apply text-gruvbox-light-yellow;
+}
+
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-type {
+  @apply text-gruvbox-light-orange;
+}
+
+.hljs-symbol,
+.hljs-bullet,
+.hljs-meta {
+  @apply text-gruvbox-light-blue;
+}
+
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  @apply text-gruvbox-light-aqua;
+}
+
+.hljs-emphasis {
+  @apply italic;
+}
+
+.hljs-strong {
+  @apply font-bold;
+}
+
+.hljs-link {
+  @apply underline;
+}
+
+.hljs-deletion {
+  @apply text-gruvbox-light-red;
+}
+
+.hljs-addition {
+  @apply text-gruvbox-light-green;
+}
+
+/* Gruvbox Syntax Highlighting - Dark Theme */
+.dark .hljs {
+  @apply text-gruvbox-dark-fg1;
+}
+
+.dark .hljs-comment,
+.dark .hljs-quote {
+  @apply text-gruvbox-dark-gray italic;
+}
+
+.dark .hljs-keyword,
+.dark .hljs-selector-tag,
+.dark .hljs-tag {
+  @apply text-gruvbox-dark-red;
+}
+
+.dark .hljs-string,
+.dark .hljs-attr,
+.dark .hljs-attribute {
+  @apply text-gruvbox-dark-green;
+}
+
+.dark .hljs-number,
+.dark .hljs-literal,
+.dark .hljs-variable,
+.dark .hljs-template-variable {
+  @apply text-gruvbox-dark-purple;
+}
+
+.dark .hljs-function,
+.dark .hljs-title,
+.dark .hljs-class .hljs-title {
+  @apply text-gruvbox-dark-yellow;
+}
+
+.dark .hljs-built_in,
+.dark .hljs-builtin-name,
+.dark .hljs-type {
+  @apply text-gruvbox-dark-orange;
+}
+
+.dark .hljs-symbol,
+.dark .hljs-bullet,
+.dark .hljs-meta {
+  @apply text-gruvbox-dark-blue;
+}
+
+.dark .hljs-name,
+.dark .hljs-selector-id,
+.dark .hljs-selector-class,
+.dark .hljs-selector-attr,
+.dark .hljs-selector-pseudo {
+  @apply text-gruvbox-dark-aqua;
+}
+
+.dark .hljs-deletion {
+  @apply text-gruvbox-dark-red;
+}
+
+.dark .hljs-addition {
+  @apply text-gruvbox-dark-green;
 }

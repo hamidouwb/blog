@@ -1,0 +1,154 @@
+---
+title: 'Binary & Hexadecimal: It Was Just Counting All Along'
+imgUrl: '/post-images/03_base-conversion/thumbnail.jpg'
+youtubeId: 'ROdMxuBtdTE'
+publishedAt: '2026-01-16'
+summary: 'Learn how computers represent numbers in different bases - binary, decimal, and hexadecimal - with an interactive converter'
+seriesId: 'data-structures-algorithms'
+seriesOrder: 1
+---
+
+## Welcome
+
+AI or not, understanding computer science topics still matters. Here you learn to stay confident, competent, and in control. Connect with me on all my socials at [links.hamidouwb.com](https://links.hamidouwb.com/).
+
+Every single day, we use numbers. But have you ever stopped to think about how they actually work? Today, we are breaking down the hidden language of computers. From the system you use every day to the code that makes this video possible.
+
+## Base 10: The Denary System
+
+Let's start with what we know. Base 10, also known as denary. This is the system we grew up with. It means we have access to exactly **10 unique digits**.
+
+We start counting at zero. We increment to one, then two, then three, all the way up to nine. But here is the catch - we have just ran out of digits. So how do we represent the next number?
+
+We have to reset that nine back to zero. Add a new place on the left and increment that to one. Now we have 10.
+
+Let's keep going all the way to 19. Once again, we have run out of room in the last digit. We reset the nine to zero. But looking at the first digit, the one, we see it still has room to grow. So, we increment the one to a two, giving us 20.
+
+### Understanding Place Values
+
+To really understand this, let's look at the number **124**. Every digit sits in its own specific column based on the power of 10:
+
+- The **4** is in the position of 10⁰ (which equals 1)
+- The **2** is in the position of 10¹ (which equals 10)
+- The **1** is in the position of 10² (which equals 100)
+
+This means we have **1 hundred**, **2 tens**, and **4 ones**. If you sum those up:
+
+> 100 + 20 + 4 = **124**
+
+## Base 2: Binary - The Language of Computers
+
+Now Base 2 or binary is the language of computers. In this world, we only have access to **two digits**: 0 and 1.
+
+The exact same logic we just used applies here. We start with zero. The next number is one, but now we have no more room to increment. So we reset the one to zero. Add a new digit and put a one in front.
+
+This gives us `10`, which represents **two**.
+
+Next, we increment the last digit to get `11`, which represents **three**.
+
+Now both columns are full. Just like before, we reset both to zero. Add a new column and mark it one. Now we have `100`.
+
+### Converting Binary to Decimal
+
+The next number is `101`. But what is 101 in our human language?
+
+We use the two's table:
+- The far right is 2⁰ which is **1**
+- The middle is 2¹ which is **2**
+- The left is 2² which is **4**
+
+We have **1 four**, **0 twos**, and **1 one**. Add 4 + 1 and we see that:
+
+> Binary `101` = Decimal **5**
+
+## Base 16: Hexadecimal
+
+Now let's get a little crazy. Base 16 or hexadecimal. Here we have access to **16 digits**.
+
+We start at zero and count up to 9. But we aren't done yet. Our next digit is **A** which represents 10. Then B, C, all the way to **F**, which is our 15th value representing 15.
+
+Now we are truly out of room. We reset the F to zero. Add a new digit and we get `10` which in hexadecimal actually equals **16**.
+
+### Hex to Decimal Conversion
+
+Let's try converting the hex number **43** into decimal:
+
+- The **3** is in the 16⁰ column (the ones place)
+- The **4** is in the 16¹ column (the sixteens place)
+
+So we have **four 16s** and **three 1s**:
+
+> 64 + 3 = **67**
+
+## Interactive Converter
+
+Try it yourself! Enter a number and see it converted to all three bases. Use the +/- buttons on each output to see how numbers increment in different bases.
+
+<NumberBaseConverter />
+
+## Why Binary? The Building Blocks of Computers
+
+It turns out binary is the fundamental building block of computers.
+
+### Bits and Bytes
+
+A **bit** is the smallest way a computer can represent data. It is just a zero or a one. Think of it like a single character in a word.
+
+The next step up is a **byte** (sometimes called a word) which is comprised of **eight bits**. Computers generally read data word by word.
+
+This is actually where terms like **32-bit** or **64-bit** architecture come from. It represents the size of the chunks the computer processes.
+
+Half a byte is also called a **nibble** (4 bits).
+
+## Overflow: When Numbers Break
+
+In languages like C++, variables have a fixed size. If you aren't careful, you will find yourself in a tricky situation.
+
+Let's say you have a variable the size of a byte. The highest number you can represent is **255**. That is eight 1s in binary: `11111111`.
+
+If we try to increment this by just one, mathematically we should get a one followed by eight zeros: `100000000`. But because our variable is locked to eight bits, that new leading one has nowhere to go. It falls off the edge.
+
+We are left with eight zeros. Instead of 256, your program thinks the answer is **zero**. That is definitely not what we were expecting!
+
+## Colors: Hex in the Real World
+
+Another place you see this math is in colors. For example, the color code `#EBDBB2` is a hex representation of RGB (red, green, blue).
+
+Each pair of letters represents a number between 0 and 255, telling the screen how much of that color to use.
+
+Using our 16s table from earlier, let's break it down:
+
+**For EB (Red):**
+- E is 14, B is 11
+- 14 × 16 + 11 = **235 red**
+
+**For DB (Green):**
+- D is 13, B is 11
+- 13 × 16 + 11 = **219 green**
+
+**For B2 (Blue):**
+- B is 11, 2 is 2
+- 11 × 16 + 2 = **178 blue**
+
+That specific mix gives us a nice beige color.
+
+## Why This Matters
+
+There are so many situations where knowing this comes in clutch:
+
+- Understanding **file permissions**
+- Debugging **memory issues**
+- Working with **color codes**
+- Low-level programming and **bit manipulation**
+
+On your coding journey, you will encounter moments where knowing how the raw numbers work will save your life.
+
+## Summary
+
+Remember, computer science is all about taking data, manipulating it, and returning the result. Make sure you do the manipulation right!
+
+I hope this helps make things clear. See you on the next one.
+
+---
+
+**Connect with me:** [links.hamidouwb.com](https://links.hamidouwb.com/)
