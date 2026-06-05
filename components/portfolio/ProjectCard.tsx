@@ -29,7 +29,7 @@ export function ProjectCard({ project }: { project: Project }) {
           style={{ paddingBottom: '56.25%', position: 'relative', overflow: 'hidden' }}
         >
           <iframe
-            src={`https://www.youtube.com/embed/${project.youtubeId}`}
+            src={`https://www.youtube.com/embed/${project.youtubeId}?autoplay=1&mute=1&loop=1&playlist=${project.youtubeId}&controls=1&rel=0`}
             title={`${project.title} video`}
             style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

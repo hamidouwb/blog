@@ -6,6 +6,9 @@ import { MainHeader } from '@/components/layout/MainHeader';
 export const metadata: Metadata = {
   title: 'hamidouwb',
   description: 'Full-stack dev passionate about web dev, neovim, and sharing what I know.',
+  icons: {
+    icon: './favicon.png', // Path to your icon in /public
+  },
 };
 
 export default function RootLayout({

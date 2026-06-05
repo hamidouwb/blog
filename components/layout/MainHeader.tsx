@@ -11,7 +11,7 @@ export function MainHeader() {
           <img
             src="/headshot.png"
             alt="Profile"
-            className="w-20 h-20 rounded-full object-cover object-top shadow-lg ring-2 ring-gruvbox-light-bg3 dark:ring-gruvbox-dark-bg3 scale-110"
+            className="w-20 h-20 rounded-full object-cover object-top shadow-lg ring-2 ring-gruvbox-light-fg3 dark:ring-gruvbox-dark-fg1 scale-110"
           />
         </Link>
         <div className="flex space-x-1 items-center">

@@ -25,11 +25,12 @@ export default async function HomePage() {
 
   return (
     <>
-      <div className="full-screen">
-        <ThreeCanvas />
+      <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+        <div className="full-screen flex-shrink-0 border-2 border-gruvbox-light-fg3 dark:border-gruvbox-dark-fg1">
+          <ThreeCanvas />
+        </div>
+        <HomeHeader />
       </div>
-
-      <HomeHeader />
 
       <section className="pb-6">
         <header className="mx-4 mb-4 inline-block border-b py-2 border-gruvbox-light-yellow dark:border-gruvbox-dark-yellow">

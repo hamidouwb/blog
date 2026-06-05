@@ -30,4 +30,5 @@ export type Project = {
   youtubeId?: string;
   githubUrl?: string;
   liveUrl?: string;
+  videoOrientation?: 'portrait' | 'landscape';
 };

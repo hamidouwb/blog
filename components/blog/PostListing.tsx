@@ -1,6 +1,7 @@
 import type { MarkdownPostMetadataAndSlug } from '@/types';
 import { formatPublishedAt } from '@/lib/utils/dates';
 import Link from 'next/link';
+import { BookOpenIcon } from '@/components/icons';
 
 export function PostListing({ post }: { post: MarkdownPostMetadataAndSlug }) {
   const href = `/posts/${post.slug}`;
@@ -38,8 +39,9 @@ export function PostListing({ post }: { post: MarkdownPostMetadataAndSlug }) {
               {post.metadata.title}
             </h3>
             {isSeries && (
-              <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-gruvbox-light-yellow dark:bg-gruvbox-dark-yellow text-gruvbox-light-bg0 dark:text-gruvbox-dark-bg0">
-                📚 Series
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-medium bg-gruvbox-light-yellow dark:bg-gruvbox-dark-yellow text-gruvbox-light-bg0 dark:text-gruvbox-dark-bg0">
+                <BookOpenIcon className="w-3.5 h-3.5" />
+                Series
               </span>
             )}
           </div>
